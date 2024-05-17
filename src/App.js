@@ -2,13 +2,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./layoutStyle.css";
 import Logo from "./assets/images/logo.webp";
-import product from "./assets/images/OIP.jpg";
+import product from "./assets/images/product.webp";
 import { FaRegUser } from "react-icons/fa6";
 import { CiHeart } from "react-icons/ci";
 import { MdLocalGroceryStore } from "react-icons/md";
-import Nen1 from "./assets/images/nen1.webp";
-import Nen2 from "./assets/images/nen2.webp";
-import Nen3 from "./assets/images/nen3.webp";
+
+import Slider from "./Component/Slider";
+import Policyitem from "./Component/Policyitem";
 
 function App() {
   const hoten = "Nguyễn Hữu Tiến";
@@ -115,44 +115,43 @@ function App() {
         </div>
       </header>
       <main>
-        <div className="slider">
-          <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src={Nen1} class="d-block w-100" alt="nen1" />
-              </div>
-              <div class="carousel-item">
-                <img src={Nen2} class="d-block w-100" alt="nen2" />
-              </div>
-              <div class="carousel-item">
-                <img src={Nen3} class="d-block w-100" alt="nen3" />
-              </div>
+        <div>
+          <Slider/>
+        </div>
+        <div>
+          <div className="container">
+          <div className="row mt-3">
+            <div className="col-md-3">
+            <Policyitem
+                image="https://bizweb.dktcdn.net/100/438/171/themes/894887/assets/icon_service_1.svg?1676278465911"
+                tittle="VẬN CHUYỂN TOÀN CẦU"
+                desc="miễn phí vận chuyển với các đơn hàng trên 2.000.000Đ"
+              />
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div className="col-md-3">
+            <Policyitem
+                image="https://bizweb.dktcdn.net/100/438/171/themes/894887/assets/icon_service_2.svg?1676278465911"
+                tittle="HỖ TRỢ ONLINE 24/24"
+                desc="hỗ trợ khách hàng 24/24 tất cả các ngày trong tuần"
+              />
+            </div>
+            <div className="col-md-3">
+            <Policyitem
+                image="https://bizweb.dktcdn.net/100/438/171/themes/894887/assets/icon_service_3.svg?1676278465911"
+                tittle="MIỄN PHÍ ĐỔI TRẢ"
+                desc="Miễn phí đổi trả trong vòng 15 ngày đầu tiên"
+              />
+            </div>
+            <div className="col-md-3">
+            <Policyitem
+                image="https://bizweb.dktcdn.net/100/438/171/themes/894887/assets/icon_service_4.svg?1676278465911"
+                tittle="QUÀ TẶNG HẤP DẪN"
+                desc="Chương trình khuyễn mãi cực lớn vào mỗi chủ nhật hàng tuần"
+              />
+            </div>
           </div>
+          </div>
+          
         </div>
         <div>
           <h1 class="text-center mt-3">New Product</h1>
