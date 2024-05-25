@@ -1,0 +1,21 @@
+{
+    "categorys":[
+        {"id":1,"image":"hinh.jpg","name":"dong ho","slug":"dong-ho"},
+        {"id":2,"image":"hinh.jpg","name":"dong ho","slug":"dong-ho"},
+        {"id":3,"image":"hinh.jpg","name":"dong ho","slug":"dong-ho"},
+        {"id":4,"image":"hinh.jpg","name":"dong ho","slug":"dong-ho"},
+        {"id":5,"image":"hinh.jpg","name":"dong ho","slug":"dong-ho"},
+        {"id":6,"image":"hinh.jpg","name":"dong ho","slug":"dong-ho"}
+    ],
+    "topics":[
+        {"id":1,"name":"bai viet 1","slug":"bai-viet-1","description":"bai viet 1"},
+        {"id":2,"name":"bai viet 2","slug":"bai-viet-2","description":"bai viet 2"},
+        {"id":3,"name":"bai viet 3","slug":"bai-viet-3","description":"bai viet 3"},
+        {"id":4,"name":"bai viet 4","slug":"bai-viet-4","description":"bai viet 4"}
+    ],
+    "users":[
+        {"id":1,"name":"nguyenhuutien","email":"tien@gmail.com","phone":"0987654321","image":"hinh.jpg","address":"Thu Duc","roles":"admin"},
+        {"id":2,"name":"nguyenhuutien","email":"tien@gmail.com","phone":"0987654321","image":"hinh.jpg","address":"Thu Duc","roles":"admin"},
+        {"id":3,"name":"nguyenhuutien","email":"tien@gmail.com","phone":"0987654321","image":"hinh.jpg","address":"Thu Duc","roles":"admin"}
+    ]
+}
